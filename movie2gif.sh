@@ -19,11 +19,20 @@ OUT_GIF=$(realpath $2)
 TMP_DIR=$(realpath ./movie2gif_tmp)
 
 if [ ${INP_MP4##*.} == "mp4" ]; then
-    echo "Convert開始"
+    :
 else
     echo "error: .mp4を指定してください。"
     exit 0
 fi
+
+if [ -s "$OUT_GIF" ]; then
+    echo "error: OUTPUTを指定してください"
+    exit 0
+else
+    :
+fi
+
+echo "Convert開始"
 
 mkdir $TMP_DIR
 cd $TMP_DIR
