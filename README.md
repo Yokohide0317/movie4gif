@@ -1,3 +1,9 @@
+<div align="center">
+<samp>
+
+# pipe_qiime2
+Pipeline for Qiime2
+
 # movie2gif
 
 ## Setup
@@ -20,3 +26,6 @@ go install github.com/qeesung/asciiplayer@latest
 ```
 movie2git INPUT.mp4 OUTPUT.gif
 ```
+
+</samp>
+</div>
